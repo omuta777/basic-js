@@ -29,14 +29,7 @@ function getSeason(date) {
     season = date.getMonth();
   
 
-  /*try {
-    date.getTime();
- 
-   } catch(err) {
-     
-       throw new Error("Invalid date!");
-     }*/
- 
+  
 
   if (season <=1 || season == 11) {
     return 'winter';
@@ -59,16 +52,3 @@ module.exports = {
 };
 
 
-/*try {
-   if (date.getTime) {
-    season = date.getMonth();
-   }
-    
-  } catch(err) {
-    if (typeof data === 'undefined') {
-      return 'Unable to determine the time of year!';
-    } else  {
-      throw new Error("Invalid date!");
-    }
-
-  }*/
